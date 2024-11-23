@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="weather-container">
+            <h1>Bienvenido a Weather App</h1>
+            <br><br>
+            <form id="weatherForm">
+                <input type="text" id="cityInput" name="city" placeholder="Pon el nombre de la ciudad" required>
+                <br><br>
+                <button type="button" id="currentWeatherBtn" class="current-weather-btn">Clima actual</button>
+                <button type="button" id="forecastBtn" class="forecast-btn">Consultar pronóstico</button>
+            </form>
+            <div class="sound-wave" id="loading" style="display: none;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>          
+            <div id="weatherResult"></div>
+            <div id="forecastResult" class="forecast-container"></div>
+        </div>
+    <script type="text/javascript" src="js/clima.js"></script>
+    </body>
+</html>
